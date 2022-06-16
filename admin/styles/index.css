@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ededed;
+}
+.addnews
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+.titlu{
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    width: 600px;
+}
+.descriere{
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    width: 600px;
+    height: 400px;
+    resize: none;
+}
+.btn{
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+}
+@media only screen and (max-width: 1000px) {
+    .addnews{
+        margin-left: 10px;
+        width: 600px;
+    }
+    .titlu, .descriere{
+        width: 400px;
+    }
+}
+.subcontain{
+    width: 800px;
+    padding: 20px;
+    padding-top: 5px;
+    border: solid;
+    border-color: rgb(190, 190, 190);
+    border-width: 2px;
+    border-radius: 5px;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 30px;
+}
+.subcontain h3{
+    color:rgb(48, 78, 134);
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+.subcontain .data{
+    margin-bottom: 15px;
+    padding-left: 10px;
+    margin-right: 5px;
+    font-size: 15px;
+    color: #a8a8a8;
+}
+.subcontain .descriere a{
+    color: #5b8db6;
+    font-weight: bold;
+}
+
+.subcontain .descriere a:hover{
+    color: #1d598a;
+}
+@media only screen and (max-width: 1100px) {
+    .contain{
+        margin: 0;
+        margin-left: 30px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .subcontain{
+        width: 670px;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .contain
+    {
+        width: 90%;
+    }
+    .subcontain{
+        width: 100%;
+    }
+}

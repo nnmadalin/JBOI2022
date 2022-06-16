@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="../../js/script.js"></script>
+        
+        <link rel="stylesheet" href="../../style/navbar.css">
+        <link rel="stylesheet" href="../../style/participants.css">
+        <title>JBOI - 2022</title>
+        <script> 
+            $(function(){
+            $("#navbar").load("../../include/navbar.html"); 
+            });
+        </script> 
+    </head>
+    <body oncontextmenu="return false">
+        <script lang="text/javascript">
+                document.onkeydown = function (e) {
+                    if (event.keyCode == 123) {
+                        return false;
+                    }
+                    if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                        return false;
+                    }
+                    if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                        return false;
+                    }
+                    if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                        return false;
+                    }
+                    if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                        return false;
+                    }
+                };
+                document.onkeydown = function (e) {
+                    e = e || window.event;//Get event
+                    if (e.ctrlKey) {
+                        var c = e.which || e.keyCode;//Get key code
+                        switch (c) {
+                            case 83://Block Ctrl+S
+                                e.preventDefault();     
+                                e.stopPropagation();
+                            break;
+                        }
+                    }
+                };
+        </script>
+
+        
+        <div class = "navbar" id = "navbar"></div>
+
+        <div class="contain title">
+            <h1 style = "text-align: left; margin-bottom: 50px; color: black; font-size: 50px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Participants</h1>
+        </div>
+        <br>
+        <div class="contain oameni">
+            <div class="row">
+                <div class="column">
+                    <h1 style = "text-align: center; font-size: 25px!important; color: black; margin: 0;">Albania</h1>
+                    <img class = "flag" src = "https://flagcdn.com/al.svg">
+                    <div class="legend">
+                        <figure>
+                        </figure>
+                    </div>
+                    <div class="common">
+                        <figure>
+                        </figure> 
+                    </div>
+                </div>
+                <div class="column">
+                    <h1 style = "text-align: center; font-size: 25px!important; color: black; margin: 0;">Bosnia and Herzegovina</h1>
+                    <img class = "flag" src = "https://flagcdn.com/ba.svg">
+                    <div class="legend">
+                        <figure>
+                        </figure>
+                    </div>
+                    <div class="common">
+                        <figure>
+                        </figure> 
+                    </div>
+                </div>
+                <div class="column">
+                    <h1 style = "text-align: center; font-size: 25px!important; color: black; margin: 0;">Bulgaria</h1>
+                    <img class = "flag" src = "https://flagcdn.com/bg.svg">
+                    <div class="legend">
+                        <figure>
+                        </figure>
+                    </div>
+                    <div class="common">
+                        <figure>
+                        </figure> 
+                    </div>
+                </div>
+                <div class="column">
+                    <h1 style = "text-align: center; font-size: 25px!important; color: black; margin: 0;">Cypru</h1>
+                    <img class = "flag" src = "https://flagcdn.com/cy.svg">
+                    <div class="legend">
+                        <figure>
+                        </figure>
+                    </div>
+                    <div class="common">
+                        <figure>
+                        </figure> 
+                    </div>
+                </div>
+                <div class="column">
+                    <h1 style = "text-align: center; font-size: 25px!important; color: black; margin: 0;">Croatia</h1>
+                    <img class = "flag" src = "https://flagcdn.com/hr.svg">
+                    <div class="legend">
+                        <figure>
+                        </figure>
+                    </div>
+                    <div class="common">
+                        <figure>
+                        </figure> 
+                    </div>
+                </div>
+                <div class="column">
+                    <h1 style = "text-align: center; font-size: 25px!important; color: black; margin: 0;">Greece</h1>
+                    <img class = "flag" src = "https://flagcdn.com/gr.svg">
+                    <div class="legend">
+                        <figure>
+                        </figure>
+                    </div>
+                    <div class="common">
+                        <figure>
+                        </figure> 
+                    </div>
+                </div>
+                <div class="column">
+                    <h1 style = "text-align: center; font-size: 25px!important; color: black; margin: 0;">North Macedonia</h1>
+                    <img class = "flag" src = "https://flagcdn.com/mk.svg">
+                    <div class="legend">
+                        <figure>
+                        </figure>
+                    </div>
+                    <div class="common">
+                        <figure>
+                        </figure> 
+                    </div>
+                </div>
+                <div class="column">
+                    <h1 style = "text-align: center; font-size: 25px!important; color: black; margin: 0;">Montenegro</h1>
+                    <img class = "flag" src = "https://flagcdn.com/me.svg">
+                    <div class="legend">
+                        <figure>
+                        </figure>
+                    </div>
+                    <div class="common">
+                        <figure>
+                        </figure> 
+                    </div>
+                </div>
+                <div class="column">
+                    <h1 style = "text-align: center; font-size: 25px!important; color: black; margin: 0;">Serbia</h1>
+                    <img class = "flag" src = "https://flagcdn.com/rs.svg">
+                    <div class="legend">
+                        <figure>
+                        </figure>
+                    </div>
+                    <div class="common">
+                        <figure>
+                        </figure> 
+                    </div>
+                </div>
+                <div class="column">
+                    <h1 style = "text-align: center; font-size: 25px!important; color: black; margin: 0;">Slovenia</h1>
+                    <img class = "flag" src = "https://flagcdn.com/si.svg">
+                    <div class="legend">
+                        <figure>
+                        </figure>
+                    </div>
+                    <div class="common">
+                        <figure>
+                        </figure> 
+                    </div>
+                </div>
+                <div class="column">
+                    <h1 style = "text-align: center; font-size: 25px!important; color: black; margin: 0;">Turkey</h1>
+                    <img class = "flag" src = "https://flagcdn.com/tr.svg">
+                    <div class="legend">
+                        <figure>
+                        </figure>
+                    </div>
+                    <div class="common">
+                        <figure>
+                        </figure> 
+                    </div>
+                </div>
+                <div class="column">
+                    <h1 style = "text-align: center; font-size: 25px!important; color: black; margin: 0;">Romania</h1>
+                    <img class = "flag" src = "https://flagcdn.com/ro.svg">
+                    <div class="legend">
+                        <figure>
+                        </figure>
+                    </div>
+                    <div class="common">
+                        <figure>
+                        </figure> 
+                    </div>
+                </div>
+                <div class="column">
+                    <h1 style = "text-align: center; font-size: 25px!important; color: black; margin: 0;">Moldova</h1>
+                    <img class = "flag" src = "https://flagcdn.com/md.svg">
+                    <div class="legend">
+                        <figure>
+                        </figure>
+                    </div>
+                    <div class="common">
+                        <figure>
+                        </figure> 
+                    </div>
+                </div>
+                <div class="column">
+                    <h1 style = "text-align: center; font-size: 25px!important; color: black; margin: 0;">Italy</h1>
+                    <img class = "flag" src = "https://flagcdn.com/it.svg">
+                    <div class="legend">
+                        <figure>
+                        </figure>
+                    </div>
+                    <div class="common">
+                        <figure>
+                        </figure> 
+                    </div>
+                </div>
+                <div class="column">
+                    <h1 style = "text-align: center; font-size: 25px!important; color: black; margin: 0;">Georgia</h1>
+                    <img class = "flag" src = "https://flagcdn.com/ge.svg">
+                    <div class="legend">
+                        <figure>
+                        </figure>
+                    </div>
+                    <div class="common">
+                        <figure>
+                        </figure> 
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,86 @@
+body{
+    background-color: #ededed;
+}
+
+.center{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.center h1{
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 60px;
+    color:black;
+    font-weight: bold;
+    white-space: wrap;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    color:cornflowerblue;
+}
+
+.collapsible {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+  
+.active, .collapsible:hover {
+    background-color: rgb(143, 143, 143);
+}
+  
+.collapsible:after {
+    content: '\002B';
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "\2212";
+}
+  
+.content {
+    padding: 0 18px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #e7e7e7;
+}
+
+@media only screen and (max-width: 1250px) {
+    .center{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .title{
+        width: 400px!important;
+    }
+}
+
+.title{
+    width: 500px;
+    padding: 30px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: white;
+    border-radius: 10px;
+}
+.link{
+    color: #5b8db6;
+    font-weight: bold;
+  }
+.link:hover{
+    color: #1d598a;
+}

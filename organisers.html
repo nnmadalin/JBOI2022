@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="../../js/script.js"></script>
+        
+        <link rel="stylesheet" href="../../style/navbar.css">
+        <link rel="stylesheet" href="../../style/organisers.css">
+        <title>JBOI - 2022</title>
+        <script> 
+            $(function(){
+            $("#navbar").load("../../include/navbar.html"); 
+            });
+        </script> 
+    </head>
+    <body oncontextmenu="return false">
+        <script lang="text/javascript">
+                document.onkeydown = function (e) {
+                    if (event.keyCode == 123) {
+                        return false;
+                    }
+                    if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                        return false;
+                    }
+                    if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                        return false;
+                    }
+                    if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                        return false;
+                    }
+                    if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                        return false;
+                    }
+                };
+                document.onkeydown = function (e) {
+                    e = e || window.event;//Get event
+                    if (e.ctrlKey) {
+                        var c = e.which || e.keyCode;//Get key code
+                        switch (c) {
+                            case 83://Block Ctrl+S
+                                e.preventDefault();     
+                                e.stopPropagation();
+                            break;
+                        }
+                    }
+                };
+        </script>
+
+        
+        <div class = "navbar" id = "navbar"></div>
+
+        <div class="contain">
+            <h1 style = "text-align: left; margin-bottom: 50px; color: black; font-size: 50px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Organisers</h1>
+            
+
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <a href = "https://www.edu.ro/" target="_blank"> <img class = "imagine" src = "../../image/organizatori/edu.png"></a>
+                    </div>
+                    <div class="slide">
+                        <a href = "https://isjbotosani.ro/" target="_blank"> <img class = "imagine" src = "../../image/organizatori/isjbt.png"></a>
+                    </div>
+                    <div class="slide">
+                        <a href = "https://www.sepi.ro" target="_blank"><img class = "imagine" src = "../../image/organizatori/sepi.png"></a>
+                    </div>
+                    <div class="slide">
+                        <a href = "https://www.primariadorohoi.ro/" target="_blank"><img class = "imagine" src = "../../image/organizatori/dorohoi.png"></a>
+                    </div>
+                    <div class="slide">
+                        <a href = "https://lrmd.ro/" target="_blank"><img class = "imagine" src = "../../image/organizatori/regina.png" > </a>
+                    </div>
+                    <div class="slide">
+                        <a href = "https://www.edu.ro/" target="_blank"> <img class = "imagine" src = "../../image/organizatori/edu.png"></a>
+                    </div>
+                    <div class="slide">
+                        <a href = "https://isjbotosani.ro/" target="_blank"> <img class = "imagine" src = "../../image/organizatori/isjbt.png"></a>
+                    </div>
+                    <div class="slide">
+                        <a href = "https://www.sepi.ro" target="_blank"><img class = "imagine" src = "../../image/organizatori/sepi.png"></a>
+                    </div>
+                    <div class="slide">
+                        <a href = "https://www.primariadorohoi.ro/" target="_blank"><img class = "imagine" src = "../../image/organizatori/dorohoi.png"></a>
+                    </div>
+                    <div class="slide">
+                        <a href = "https://lrmd.ro/" target="_blank"><img class = "imagine" src = "../../image/organizatori/regina.png" > </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+            <div class="man">
+                <h3>Honorary President</h3>
+                <ul class = "compus">
+                    <li></li>
+                </ul>
+                <br><br>
+                <h3>Executive President</h3>
+                <ul class = "compus">
+                    <li></li>
+                </ul>
+                <br><br>
+                <h3>Chairman</h3>
+                <ul class = "compus">
+                    <li></li>
+                </ul>
+                <br><br>
+                <h3>Scientific Committee</h3>
+                <ul class = "compus">
+                    <li></li>
+                </ul>
+                <br><br>
+                <h3>Technical Committee</h3>
+                <ul class = "compus">
+                    <li></li>
+                </ul>
+            </div>
+            -->
+
+        </div>
+        <script>
+            $(document).ready(function() {
+            $('.logo-carousel').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1000,
+                arrows: true,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4
+                }
+                }, {
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 2
+                }
+                }]
+            });
+            });
+
+        </script>
+        
+    </body>
+</html>

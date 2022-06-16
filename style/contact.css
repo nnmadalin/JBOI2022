@@ -1,0 +1,48 @@
+body{
+    background-color: #ededed;
+}
+
+.center{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.center h1{
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 60px;
+    color:black;
+    font-weight: bold;
+    white-space: wrap;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    color:cornflowerblue;
+}
+.center h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color:black;
+    font-weight: normal;
+    white-space: unset;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+@media only screen and (max-width: 1250px) {
+    .center{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .harta{
+        width: 350px;
+        height: 250px;
+    }
+}
+
+.link{
+    color: #5b8db6;
+    font-weight: bold;
+  }
+.link:hover{
+    color: #1d598a;
+}

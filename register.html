@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="../../js/script.js"></script>
+        
+        <link rel="stylesheet" href="../../style/navbar.css">
+        <link rel="stylesheet" href="../../style/register.css">
+        <title>JBOI - 2022</title>
+        <script> 
+            $(function(){
+            $("#navbar").load("../../include/navbar.html"); 
+            });
+        </script> 
+    </head>
+    <body oncontextmenu="return false">
+        <script lang="text/javascript">
+                document.onkeydown = function (e) {
+                    if (event.keyCode == 123) {
+                        return false;
+                    }
+                    if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                        return false;
+                    }
+                    if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                        return false;
+                    }
+                    if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                        return false;
+                    }
+                    if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                        return false;
+                    }
+                };
+                document.onkeydown = function (e) {
+                    e = e || window.event;//Get event
+                    if (e.ctrlKey) {
+                        var c = e.which || e.keyCode;//Get key code
+                        switch (c) {
+                            case 83://Block Ctrl+S
+                                e.preventDefault();     
+                                e.stopPropagation();
+                            break;
+                        }
+                    }
+                };
+        </script>
+
+        
+        <div class = "navbar" id = "navbar"></div>
+        <div class = "center">
+            <h1 style = "text-align: left; margin-bottom: 50px; color: black; font-family: 'Poppins', sans-serif !important;">Register</h1>
+            
+            <div class="content title">
+                <h1 style = "font-size: 20px; color: black; margin: 0;">If you want to register, <a href = "https://login.intuitext.ro/oauth2/register" target="_blank"class = "link">click here</a></h1>
+            </div>
+
+            <button class="collapsible">Ghid 1</button>
+            <div class="content">
+
+            </div>
+
+            <button class="collapsible">Ghid 2</button>
+            <div class="content">
+
+            </div>
+
+        </div>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                content.style.maxHeight = null;
+                } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                } 
+            });
+            }
+        </script>
+    </body>
+</html>
